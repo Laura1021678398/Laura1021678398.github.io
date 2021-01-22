@@ -73,9 +73,33 @@
                     
                         <li class="menu-item">
                             <a class=""
-                               href="/life"
+                               href="/categories"
                             >
-                                LIFE
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                LINKS
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/changelog"
+                            >
+                                CHANGELOG
                             </a>
                         </li>
                     
@@ -112,7 +136,22 @@
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/life">LIFE</a>
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">LINKS</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/changelog">CHANGELOG</a>
                 </li>
             
         </ul>
@@ -153,12 +192,38 @@
         <i class="fas fa-edit"></i> 2021-01-22 14:20:00
     </span>
     
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>
+            <ul>
+                
+                    <li>
+                        <a href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a>
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>
+            <ul>
+                
+                    <li>
+                        <a href="/tags/hexo/">hexo</a>
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Github/">Github</a>
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i> <span>534 Words</span>
+            <i class="fas fa-file-word"></i> <span>592 Words</span>
         </span>
     
     
@@ -201,7 +266,9 @@
 <li><code>hexo new &#39;postname&#39;</code></li>
 </ol>
 <h1 id="Keep使用指南"><a href="#Keep使用指南" class="headerlink" title="Keep使用指南"></a>Keep使用指南</h1><p>Keep是hexo的一个主题，以轻巧、简洁为宗旨，总之就是非常好看。Keep官网有详细的使用教程，这里就简单的把搭建的步骤写一下，详细的内容可以参考Keep官网</p>
-<h2 id="Keep主题下载"><a href="#Keep主题下载" class="headerlink" title="Keep主题下载"></a>Keep主题下载</h2><h2 id="修改-config-yml文件"><a href="#修改-config-yml文件" class="headerlink" title="修改_config.yml文件"></a>修改_config.yml文件</h2>
+<h2 id="Keep主题下载"><a href="#Keep主题下载" class="headerlink" title="Keep主题下载"></a>Keep主题下载</h2><h2 id="修改-config-yml文件"><a href="#修改-config-yml文件" class="headerlink" title="修改_config.yml文件"></a>修改_config.yml文件</h2><p><a class="link"   target="_blank" rel="noopener" href="https://keep.xpoet.cn/2020/11/Keep-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" >Keep-主题配置指南<i class="fas fa-external-link-alt"></i></a>中详细介绍了<code>_config.yml</code>文件中每一个配置的作用，可以根据自己的需要选择开启的功能</p>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a class="link"   target="_blank" rel="noopener" href="https://juejin.cn/post/6844903887732736007" >hexo在GitHub上搭建个人博客（详细教程）<i class="fas fa-external-link-alt"></i></a></p>
+
         </div>
 
         
@@ -370,7 +437,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%E9%98%B6%E6%AE%B5"><span class="nav-number">1.</span> <span class="nav-text">环境准备阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="nav-number">1.2.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.3.</span> <span class="nav-text">本地建立博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%91%E5%AE%9AGithub%E5%92%8C%E6%9C%AC%E5%9C%B0hexo%E5%8D%9A%E5%AE%A2%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">1.4.</span> <span class="nav-text">绑定Github和本地hexo博客文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98"><span class="nav-number">1.5.</span> <span class="nav-text">修改主题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%86%99%E5%8D%9A%E5%AE%A2"><span class="nav-number">2.</span> <span class="nav-text">写博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Keep%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97"><span class="nav-number">3.</span> <span class="nav-text">Keep使用指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Keep%E4%B8%BB%E9%A2%98%E4%B8%8B%E8%BD%BD"><span class="nav-number">3.1.</span> <span class="nav-text">Keep主题下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9-config-yml%E6%96%87%E4%BB%B6"><span class="nav-number">3.2.</span> <span class="nav-text">修改_config.yml文件</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%E9%98%B6%E6%AE%B5"><span class="nav-number">1.</span> <span class="nav-text">环境准备阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="nav-number">1.2.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.3.</span> <span class="nav-text">本地建立博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%91%E5%AE%9AGithub%E5%92%8C%E6%9C%AC%E5%9C%B0hexo%E5%8D%9A%E5%AE%A2%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">1.4.</span> <span class="nav-text">绑定Github和本地hexo博客文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98"><span class="nav-number">1.5.</span> <span class="nav-text">修改主题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%86%99%E5%8D%9A%E5%AE%A2"><span class="nav-number">2.</span> <span class="nav-text">写博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Keep%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97"><span class="nav-number">3.</span> <span class="nav-text">Keep使用指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Keep%E4%B8%BB%E9%A2%98%E4%B8%8B%E8%BD%BD"><span class="nav-number">3.1.</span> <span class="nav-text">Keep主题下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9-config-yml%E6%96%87%E4%BB%B6"><span class="nav-number">3.2.</span> <span class="nav-text">修改_config.yml文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-number">4.</span> <span class="nav-text">参考文章</span></a></li></ol>
     </div>
 </div>
         </aside>
