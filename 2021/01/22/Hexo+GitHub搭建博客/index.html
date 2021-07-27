@@ -28,431 +28,93 @@
 
 
 <body>
-<div class="progress-bar-container">
-    
-
-    
-</div>
-
-
-<main class="page-container">
-
-    
-
-    <div class="page-main-content">
-
-        <div class="page-main-content-top">
-            <header class="header-wrapper">
-
-    <div class="header-content">
-        <div class="left">
-            <a class="logo-title" href="/">
-                xyt&#39;s blog
-            </a>
-        </div>
-
-        <div class="right">
-            <div class="pc">
-                <ul class="menu-list">
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/"
-                            >
-                                HOME
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/archives"
-                            >
-                                ARCHIVES
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/categories"
-                            >
-                                CATEGORIES
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/tags"
-                            >
-                                TAGS
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/links"
-                            >
-                                LINKS
-                            </a>
-                        </li>
-                    
-                    
-                        <li class="menu-item search search-popup-trigger">
-                            <i class="fas fa-search"></i>
-                        </li>
-                    
-                </ul>
-            </div>
-            <div class="mobile">
-                
-                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
-                
-                <div class="icon-item menu-bar">
-                    <div class="menu-bar-middle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="header-drawer">
-        <ul class="drawer-menu-list">
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/">HOME</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/archives">ARCHIVES</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/categories">CATEGORIES</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/tags">TAGS</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/links">LINKS</a>
-                </li>
-            
-        </ul>
-    </div>
-
-    <div class="window-mask"></div>
-
-</header>
-
-
-        </div>
-
-        <div class="page-main-content-middle">
-
-            <div class="main-content normal-code-theme">
-
-                
-                    <div class="fade-in-down-animation">
-    <div class="article-content-container">
-
-        <div class="article-title">
-            <span class="title-hover-animation">Hexo+Github搭建博客</span>
-        </div>
-
-        
-            <div class="article-header">
-                <div class="avatar">
-                    <img src="/images/icon.jpg">
-                </div>
-                <div class="info">
-                    <div class="author">
-                        <span class="name">Laura Xv</span>
-                        <span class="level">Lv1</span>
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fas fa-edit"></i> 2021-01-22 14:20:00
-    </span>
-    
-        <span class="article-categories article-meta-item">
-            <i class="fas fa-folder"></i>
-            <ul>
-                
-                    <li>
-                        <a href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a>
-                    </li>
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fas fa-tags"></i>
-            <ul>
-                
-                    <li>
-                        <a href="/tags/hexo/">hexo</a>
-                    </li>
-                
-                    <li>
-                        | <a href="/tags/Github/">Github</a>
-                    </li>
-                
-            </ul>
-        </span>
-    
-
-    
-    
-        <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i> <span>621 Words</span>
-        </span>
-    
-    
-        <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i> <span>2 Mins</span>
-        </span>
-    
-    
-        <span class="article-pv article-meta-item">
-            <i class="fas fa-eye"></i> <span id="busuanzi_value_page_pv"></span>
-        </span>
-    
-</div>
-
-                    </div>
-                </div>
-            </div>
-        
-
-        <div class="article-content markdown-body">
-            <p>这篇文章介绍了如何在Github上搭建博客，使用的环境是WSL Ubuntu20.04</p>
-<h1 id="环境准备阶段"><a href="#环境准备阶段" class="headerlink" title="环境准备阶段"></a>环境准备阶段</h1><h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p>Ubuntu可以直接使用<code>apt install</code>安装最新版node.js</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install nodejs</span><br><span class="line">sudo apt install npm</span><br></pre></td></tr></table></figure>
-<p>使用<code>node -v</code>、<code>npm -v</code>查看版本以及是否安装成功</p>
-<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>Ubuntu使用npm安装hexo，首先修改一下npm的源</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>然后用npm安装hexo</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo</span><br></pre></td></tr></table></figure>
-<h2 id="本地建立博客"><a href="#本地建立博客" class="headerlink" title="本地建立博客"></a>本地建立博客</h2><p>在电脑上新建一个文件夹，这个文件夹就用来保存博客有关的内容。比如我新建了一个文件夹<code>D:\Documents\Laura1021678398.github.io</code>。进入该文件夹，执行<code>hexo init</code>，就初始化了一个hexo项目（也就是你的博客代码）</p>
-<p>接着，执行<code>hexo g</code>，hexo就会在public文件夹生成相关html文件，这些文件就是博客的内容，会被hexo自动提交到GitHub中去。完成上述步骤以后，可以执行<code>hexo s</code>，打开本地预览服务，然后打开浏览器访问 <a class="link"   target="_blank" rel="noopener" href="http://localhost:4000/" >http://localhost:4000<i class="fas fa-external-link-alt"></i></a> 就可以看到博客页面了</p>
-<h2 id="绑定Github和本地hexo博客文件夹"><a href="#绑定Github和本地hexo博客文件夹" class="headerlink" title="绑定Github和本地hexo博客文件夹"></a>绑定Github和本地hexo博客文件夹</h2><ol>
-<li>配置博客文件夹下的<code>_config.yml</code>文件中有关deploy的部分。注意这里要用ssh形式的链接，而不能用https，https是hexo2.x的写法，现在已经不能用了<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:yourname&#x2F;yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li>
-<li>安装hexo部署插件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
-<li>执行<code>hexo d</code>提交部署此次更改的代码</li>
-</ol>
-<h2 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h2><p>hexo默认的主题感觉不大好看，想要更换主题可以先在<a class="link"   target="_blank" rel="noopener" href="https://hexo.io/themes/" >官网<i class="fas fa-external-link-alt"></i></a>上挑选一下，每款主题中会有配置的文档，可以自己按照文档配置一下</p>
-<h1 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h1><p>使用hexo写博客有两种方法</p>
-<ol>
-<li><code>hexo new page &#39;pagename&#39;</code></li>
-<li><code>hexo new &#39;postname&#39;</code></li>
-</ol>
-<h1 id="Keep使用指南"><a href="#Keep使用指南" class="headerlink" title="Keep使用指南"></a>Keep使用指南</h1><p>Keep是hexo的一个主题，以轻巧、简洁为宗旨，总之就是非常好看。Keep官网有详细的使用教程，这里就简单的把搭建的步骤写一下，详细的内容可以参考Keep官网</p>
-<h2 id="Keep主题下载"><a href="#Keep主题下载" class="headerlink" title="Keep主题下载"></a>Keep主题下载</h2><h2 id="修改-config-yml文件"><a href="#修改-config-yml文件" class="headerlink" title="修改_config.yml文件"></a>修改_config.yml文件</h2><p><a class="link"   target="_blank" rel="noopener" href="https://keep.xpoet.cn/2020/11/Keep-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" >Keep-主题配置指南<i class="fas fa-external-link-alt"></i></a>中详细介绍了<code>_config.yml</code>文件中每一个配置的作用，可以根据自己的需要选择开启的功能</p>
-<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a class="link"   target="_blank" rel="noopener" href="https://juejin.cn/post/6844903887732736007" >hexo在GitHub上搭建个人博客（详细教程）<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="https://linlif.github.io/2017/05/27/Hexo%E4%BD%BF%E7%94%A8%E6%94%BB%E7%95%A5-%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E5%8F%8A%E6%A0%87%E7%AD%BE/" >Hexo使用攻略-添加分类及标签<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="https://sunhwee.com/posts/6e8839eb.html" >Hexo+Github博客搭建完全教程<i class="fas fa-external-link-alt"></i></a></p>
-<h1 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h1><p><a class="link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/" >hexo官网<i class="fas fa-external-link-alt"></i></a></p>
-
-        </div>
-
-        
-
-        
-            <div class="article-nav">
-                
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2021/07/27/c++%20function/"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">c++ std::function</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next">
-                        <a class="next"
-                           rel="next"
-                           href="/1970/01/01/hello-world/"
-                        >
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">Hello World</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex-center">
-                              <i class="fas fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
-
-        
-    </div>
-</div>
-
-
-                
-            </div>
-
-        </div>
-
-        <div class="page-main-content-bottom">
-            <footer class="footer">
-    <div class="info-container">
-        <div class="copyright-info info-item">
-            &copy;
-            
-              <span>2021</span> -
-            
-            2021 <i class="fas fa-heart icon-animate"></i> <a href="/">Laura Xv</a>
-        </div>
-        
-            <script async  src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-            <div class="website-count info-item">
-                
-                    <span id="busuanzi_container_site_uv">
-                        Visitor Count <span id="busuanzi_value_site_uv"></span>&ensp;
-                    </span>
-                
-                
-                    <span id="busuanzi_container_site_pv">
-                        Totalview <span id="busuanzi_value_site_pv"></span>
-                    </span>
-                
-            </div>
-        
-        <div class="theme-info info-item">
-            Powered by <a target="_blank" href="https://hexo.io">Hexo</a> | Theme <a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.3.1</a>
-        </div>
-    </div>
-</footer>
-
-        </div>
-    </div>
-
-    
-        <div class="post-tools">
-            <div class="post-tools-container">
-    <ul class="tools-list">
-        <!-- TOC aside toggle -->
-        
-            <li class="tools-item page-aside-toggle">
-                <i class="fas fa-outdent"></i>
-            </li>
-        
-
-        <!-- go comment -->
-        
-    </ul>
-</div>
-
-        </div>
-    
-
-    <div class="right-bottom-side-tools">
-        <div class="side-tools-container">
-    <ul class="side-tools-list">
-        <li class="tools-item tool-font-adjust-plus flex-center">
-            <i class="fas fa-search-plus"></i>
-        </li>
-
-        <li class="tools-item tool-font-adjust-minus flex-center">
-            <i class="fas fa-search-minus"></i>
-        </li>
-
-        <li class="tools-item tool-expand-width flex-center">
-            <i class="fas fa-arrows-alt-h"></i>
-        </li>
-
-        <li class="tools-item tool-dark-light-toggle flex-center">
-            <i class="fas fa-moon"></i>
-        </li>
-
-        <!-- rss -->
-        
-
-        
-            <li class="tools-item tool-scroll-to-top flex-center">
-                <i class="fas fa-arrow-up"></i>
-            </li>
-        
-
-        <li class="tools-item tool-scroll-to-bottom flex-center">
-            <i class="fas fa-arrow-down"></i>
-        </li>
-    </ul>
-
-    <ul class="exposed-tools-list">
-        <li class="tools-item tool-toggle-show flex-center">
-            <i class="fas fa-cog fa-spin"></i>
-        </li>
-        
-    </ul>
-</div>
-
-    </div>
-
-    
-        <aside class="page-aside">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%E9%98%B6%E6%AE%B5"><span class="nav-number">1.</span> <span class="nav-text">环境准备阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="nav-number">1.2.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.3.</span> <span class="nav-text">本地建立博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%91%E5%AE%9AGithub%E5%92%8C%E6%9C%AC%E5%9C%B0hexo%E5%8D%9A%E5%AE%A2%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">1.4.</span> <span class="nav-text">绑定Github和本地hexo博客文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98"><span class="nav-number">1.5.</span> <span class="nav-text">修改主题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%86%99%E5%8D%9A%E5%AE%A2"><span class="nav-number">2.</span> <span class="nav-text">写博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Keep%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97"><span class="nav-number">3.</span> <span class="nav-text">Keep使用指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Keep%E4%B8%BB%E9%A2%98%E4%B8%8B%E8%BD%BD"><span class="nav-number">3.1.</span> <span class="nav-text">Keep主题下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9-config-yml%E6%96%87%E4%BB%B6"><span class="nav-number">3.2.</span> <span class="nav-text">修改_config.yml文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-number">4.</span> <span class="nav-text">参考文章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5"><span class="nav-number">5.</span> <span class="nav-text">相关链接</span></a></li></ol>
-    </div>
-</div>
-        </aside>
-    
-
-    <div class="image-viewer-container">
-    <img src="">
-</div>
-
-
-    
-        <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-          <span class="search-input-field-pre">
-            <i class="fas fa-keyboard"></i>
-          </span>
-            <div class="search-input-container">
-                <input autocomplete="off"
-                       autocorrect="off"
-                       autocapitalize="off"
-                       placeholder="Search..."
-                       spellcheck="false"
-                       type="search"
-                       class="search-input"
-                >
-            </div>
-            <span class="popup-btn-close">
-                <i class="fas fa-times"></i>
-            </span>
-        </div>
-        <div id="search-result">
-            <div id="no-result">
-                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
-            </div>
-        </div>
-    </div>
-</div>
-
-    
-
-</main>
-
-
+.page-container {
+  position: relative;
+keep-tablet()
+}
+.page-container .page-main-content {
+  padding-top: $header-height;
+  position: relative;
+keep-tablet()
+keep-mobile()
+}
+.header-shrink .page-container .page-main-content {
+  padding-top: $header-shrink-height;
+keep-tablet()
+keep-mobile()
+}
+.page-container .page-main-content .page-main-content-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: $header-height;
+  z-index: $z-index-5;
+  box-sizing: border-box;
+keep-tablet()
+keep-mobile()
+}
+.page-container .page-main-content .page-main-content-top.hide {
+  transform: translateY(-105%);
+}
+.header-shrink .page-container .page-main-content .page-main-content-top {
+  height: $header-shrink-height;
+keep-tablet()
+keep-mobile()
+}
+.page-container .page-main-content .page-main-content-middle {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: $component-spacing-value 0;
+  background: var(--background-color);
+keep-tablet()
+keep-mobile()
+}
+.page-container .page-main-content .page-main-content-middle .main-content {
+  position: relative;
+  box-sizing: border-box;
+  width: $main-content-width;
+  max-width: $content-max-width;
+  height: 100%;
+keep-tablet()
+keep-mobile()
+}
+.page-container .page-main-content .page-main-content-bottom {
+  width: 100%;
+}
+.page-container .page-aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  z-index: $z-index-6;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: var(--background-color);
+keep-tablet()
+}
+.page-container .post-tools {
+  position: fixed;
+  top: $header-height$component-spacing-value;
+  right: $component-spacing-value;
+keep-tablet()
+keep-mobile()
+}
+.header-shrink .page-container .post-tools {
+  top: $header-shrink-height$component-spacing-value;
+keep-tablet()
+keep-mobile()
+}
+.page-container .right-bottom-side-tools {
+  position: fixed;
+  bottom: 5%;
+  right: 0;
+}
 
 <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.3.1/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.3.1/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.3.1/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.3.1/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.3.1/source/js/dark-light-toggle.js"></script>
 
