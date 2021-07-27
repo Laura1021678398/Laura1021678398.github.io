@@ -57,8 +57,14 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>test-site</title>
-    <url>/2021/07/27/C++%20function/</url>
+    <title>c++ std::function</title>
+    <url>/2021/07/27/c++%20function/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>c++</tag>
+      </tags>
   </entry>
 </search>
