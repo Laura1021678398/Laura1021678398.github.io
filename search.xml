@@ -40,7 +40,7 @@
 </ol>
 <h1 id="Keep使用指南"><a href="#Keep使用指南" class="headerlink" title="Keep使用指南"></a>Keep使用指南</h1><p>Keep是hexo的一个主题，以轻巧、简洁为宗旨，总之就是非常好看。Keep官网有详细的使用教程，这里就简单的把搭建的步骤写一下，详细的内容可以参考Keep官网</p>
 <h2 id="Keep主题下载"><a href="#Keep主题下载" class="headerlink" title="Keep主题下载"></a>Keep主题下载</h2><h2 id="修改-config-yml文件"><a href="#修改-config-yml文件" class="headerlink" title="修改_config.yml文件"></a>修改_config.yml文件</h2><p><a class="link"   href="https://keep.xpoet.cn/2020/11/Keep-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" >Keep-主题配置指南<i class="fas fa-external-link-alt"></i></a>中详细介绍了<code>_config.yml</code>文件中每一个配置的作用，可以根据自己的需要选择开启的功能</p>
-<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a class="link"   href="https://juejin.cn/post/6844903887732736007" >hexo在GitHub上搭建个人博客（详细教程）<i class="fas fa-external-link-alt"></i></a><br><a class="link"   href="https://linlif.github.io/2017/05/27/Hexo%E4%BD%BF%E7%94%A8%E6%94%BB%E7%95%A5-%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E5%8F%8A%E6%A0%87%E7%AD%BE/" >Hexo使用攻略-添加分类及标签<i class="fas fa-external-link-alt"></i></a></p>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a class="link"   href="https://juejin.cn/post/6844903887732736007" >hexo在GitHub上搭建个人博客（详细教程）<i class="fas fa-external-link-alt"></i></a><br><a class="link"   href="https://linlif.github.io/2017/05/27/Hexo%E4%BD%BF%E7%94%A8%E6%94%BB%E7%95%A5-%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E5%8F%8A%E6%A0%87%E7%AD%BE/" >Hexo使用攻略-添加分类及标签<i class="fas fa-external-link-alt"></i></a><br><a class="link"   href="https://sunhwee.com/posts/6e8839eb.html" >Hexo+Github博客搭建完全教程<i class="fas fa-external-link-alt"></i></a></p>
 <h1 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h1><p><a class="link"   href="https://hexo.io/zh-cn/docs/" >hexo官网<i class="fas fa-external-link-alt"></i></a></p>
 ]]></content>
       <categories>
@@ -50,5 +50,15 @@
         <tag>hexo</tag>
         <tag>Github</tag>
       </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/07/27/C++%20stdfunction/</url>
+    <content><![CDATA[<h1 id="C-std-function"><a href="#C-std-function" class="headerlink" title="C++ std:function"></a>C++ std:function</h1>]]></content>
+  </entry>
+  <entry>
+    <title>test-site</title>
+    <url>/2021/07/27/test-site/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
