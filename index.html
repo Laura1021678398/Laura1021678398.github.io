@@ -36,14 +36,73 @@
 <main class="page-container">
 
     
-        <div class="first-screen-container flex-center fade-in-down-animation">
-    <div class="content flex-center">
-        <div class="description">
-            今天，你写博客了吗？
-        </div>
-        
-    </div>
-</div>
+        $first-screen-font-size = 2rem;
+$first-screen-icon-size = 1.6rem;
+
+$temp-img = hexo-config('style.first_screen.background_img');
+$first-screen-img = $temp-img ? $temp-img:'/images/bg.svg';
+
+.first-screen-container {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  background: url($first-screen-img) center center / cover no-repeat;
+  background-position-y: $header-height;
+
+
+  +keep-tablet() {
+    background-position-y: $header-height * 0.9;
+  }
+
+  +keep-mobile() {
+    background-position-y: $header-height * 0.8;
+  }
+
+  .content {
+    position: relative;
+    box-sizing: border-box;
+    width: 80%;
+    height: 90%;
+
+    .description {
+      font-weight: bold;
+      font-size: $first-screen-font-size;
+      line-height: 1.8;
+      text-align: center;
+      color: var(--default-text-color);
+
+
+      +keep-tablet() {
+        font-size: $first-screen-font-size * 0.9;
+      }
+    }
+
+
+    .s-icon-list {
+      position: absolute;
+      bottom: 0;
+      font-size: $first-screen-icon-size;
+      text-align: center;
+
+      +keep-tablet() {
+        font-size: $first-screen-icon-size * 0.9;
+      }
+
+      .s-icon-item {
+        margin-right: 20px;
+        cursor: pointer;
+        line-height: 2;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      }
+
+    }
+  }
+}
 
     
 
@@ -172,35 +231,6 @@
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2021/07/27/C++%20stdfunction/">
-                        
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        title: test-sitedate: 2021-07-27 13:53:30tags:
-
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i> <span class="home-article-date" data-date="Tue Jul 27 2021 14:01:51 GMT+0800">2021-07-27</span></span>
-        
-        
-    </div>
-
-    <a href="/2021/07/27/C++%20stdfunction/">Read more <i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
                     <a href="/2021/07/27/test-site/">
                         test-site
                     </a>
@@ -220,6 +250,34 @@
     </div>
 
     <a href="/2021/07/27/test-site/">Read more <i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2021/07/27/C++%20function/">
+                        test-site
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i> <span class="home-article-date" data-date="Tue Jul 27 2021 13:53:30 GMT+0800">2021-07-27</span></span>
+        
+        
+    </div>
+
+    <a href="/2021/07/27/C++%20function/">Read more <i class="fas fa-angle-right"></i></a>
 </div>
 
             </li>
